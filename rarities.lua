@@ -31,7 +31,7 @@ SMODS.Rarity {
     key = "jimmy",
     default_weight = 0.25,
         pools = { 
-        ["milkys_jokers"] = true 
+        ["milkys_jokers"] = true}, 
     badge_colour = HEX("7f7fb1"),
     loc_txt = {
         name = "JIMMY"
@@ -42,8 +42,9 @@ SMODS.Rarity {
 }
 SMODS.Rarity {
     key = "pseudolegend",
-        pools = { 
-        ["milkys_jokers"] = true 
+    pools = { 
+        ["milkys_jokers"] = true
+    }, 
     default_weight = 0,
     badge_colour = HEX("a954b6"),
     loc_txt = {
@@ -55,8 +56,9 @@ SMODS.Rarity {
 }
 SMODS.Rarity {
     key = "legendplus",
-        pools = { 
-        ["milkys_jokers"] = true 
+    pools = { 
+        ["milkys_jokers"] = true
+    }, 
     default_weight = 0,
     badge_colour = HEX("b500ff"),
     loc_txt = {

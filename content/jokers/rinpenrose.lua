@@ -17,7 +17,7 @@ SMODS.Joker{ --Rin Penrose And The Balatro Polycule
     },
     pronouns = "he_him",
     cost = 14,
-    rarity = 4,
+    rarity = "mktjk_legendplus",
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
