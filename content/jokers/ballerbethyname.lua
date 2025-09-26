@@ -2,9 +2,6 @@ SMODS.Joker{ --Baller Be Thy Name
     key = "ballerbethyname",
     config = {
         extra = {
-            jackCount = 0,
-            queenCount = 0,
-            kingCount = 0,
             Xmult = math.pi
         }
     },
@@ -46,22 +43,32 @@ SMODS.Joker{ --Baller Be Thy Name
         ["milkys_jokers"] = true 
     },
 
+
+
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play  then
-            if context.other_card:get_id() == 11 then
-                card.ability.extra.jackCount = (card.ability.extra.jackCount) + 1
-            elseif context.other_card:get_id() == 12 then
-                card.ability.extra.queenCount = (card.ability.extra.queenCount) + 1
-            elseif context.other_card:get_id() == 13 then
-                card.ability.extra.kingCount = (card.ability.extra.kingCount) + 1
-            end
-        end
-        if context.cardarea == G.jokers and context.joker_main  then
-            if card.ability.extra.jackCount or card.ability.extra.queenCount or card.ability.extra.kingCount >= 3 then
+            -- give xmult 
+            if context.joker_main then
+                local jackCount = 0
+                local queenCount = 0
+                local kingCount = 0
+
+                for _, card in ipairs(context.scoring_hand) do
+                    if card:get_id() == 11 then --counting jacks
+                        jackCount = jackCount + 1
+                    end
+                    if card:get_id() == 12 then -- counting queens
+                        queenCount = queenCount + 1
+                    end
+                    if card:get_id() == 13 then -- counting queens
+                        kingCount = kingCount + 1
+                    end
+                end
+
+                if jackCount >= 3 or queenCount >= 3 or kingCount >= 3 then
                 return {
-                    Xmult = card.ability.extra.Xmult
+                    xmult = card.ability.extra.Xmult
                 }
             end
-        end
+        end 
     end
 }
