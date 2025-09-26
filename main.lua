@@ -432,7 +432,7 @@ function SMODS.shatters(card)
 end
 
 -- date calc
-function sinceday(year, month, day)
+function SinceDay(year, month, day)
     local now = os.date("*t")
     local then_time = os.time({ year = year, month = month, day = day, hour = 0 })
     local diff = os.difftime(os.time(now), then_time)

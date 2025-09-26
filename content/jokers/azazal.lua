@@ -51,7 +51,7 @@ SMODS.Joker{ --Azazal
         return { 
             vars = { 
                 card.ability.extra.meowstep, 
-                (card.ability.extra.meowstep * sinceday(2025, 9, 15)) 
+                (card.ability.extra.meowstep * SinceDay(2025, 9, 15)) 
             } 
         }
     end,
@@ -59,7 +59,7 @@ SMODS.Joker{ --Azazal
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
                 return {
-                    Xmult = (card.ability.extra.meowstep * sinceday(2025, 9, 15))
+                    Xmult = (card.ability.extra.meowstep * SinceDay(2025, 9, 15))
                 }
         end
     end
