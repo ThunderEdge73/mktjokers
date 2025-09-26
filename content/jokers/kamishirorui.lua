@@ -58,7 +58,7 @@ end)() then
                     G.E_MANAGER:add_event(Event({
                         func = function()
                             local copied_joker = copy_card(target_joker, nil, nil, nil, target_joker.edition and target_joker.edition.negative)
-                            copied_joker:set_edition("e_negative", true)
+                            copied_joker:set_edition('e_negative', true)
                             copied_joker:add_sticker('perishable', true)
                             copied_joker:add_sticker('eternal', false)
                             copied_joker:add_to_deck()

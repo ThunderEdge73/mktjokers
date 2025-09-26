@@ -4,9 +4,8 @@ return {
             bl_mktjk_dvd = {
                 name = "The DVD",
                 text = {
-                    "Win when the",
-                    "DVD logo hits",
-                    "the corner"
+                    "Win when the DVD",
+                    "logo hits the corner"
                 }
             },
             bl_mktjk_dvd_alt = {
