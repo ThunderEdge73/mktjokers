@@ -98,6 +98,13 @@ return {
                     "{C:inactive,s:0.9}@silly_goober_0nthewall"
                 },
             },
+            mktjk_credit_candycane = {
+                name = "Art done by",
+                text = {
+                    "{s:1.5}Candycane",
+                    "{C:inactive,s:0.9}@candycaneanniahlator_etherware2"
+                },
+            },
         },
         Mod = {
             milkysbullshit = {
