@@ -40,6 +40,13 @@ return {
                     "{C:inactive,s:0.9}(ko-ha-ku)"
                 },
             },
+            mktjk_nokotan_name = {
+                name = "Joker Name",
+                text = {
+                    "{s:1.5}Nokotan",
+                    "{C:inactive,s:0.9}(no-ko-tan)"
+                },
+            },
             mktjk_kamishirorui_name = {
                 name = "Joker Name",
                 text = {
