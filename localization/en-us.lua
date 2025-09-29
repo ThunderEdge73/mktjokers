@@ -40,6 +40,13 @@ return {
                     "{C:inactive,s:0.9}(ko-ha-ku)"
                 },
             },
+            mktjk_nokotan_name = {
+                name = "Joker Name",
+                text = {
+                    "{s:1.5}Nokotan",
+                    "{C:inactive,s:0.9}(no-ko-tan)"
+                },
+            },
             mktjk_kamishirorui_name = {
                 name = "Joker Name",
                 text = {
@@ -96,6 +103,13 @@ return {
                 text = {
                     "{s:1.5}Astro",
                     "{C:inactive,s:0.9}@silly_goober_0nthewall"
+                },
+            },
+            mktjk_credit_candycane = {
+                name = "Art done by",
+                text = {
+                    "{s:1.5}Candycane",
+                    "{C:inactive,s:0.9}@candycaneanniahlator_etherware2"
                 },
             },
         },

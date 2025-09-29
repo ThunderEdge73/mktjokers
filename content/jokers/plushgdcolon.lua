@@ -22,6 +22,7 @@ SMODS.Joker{ --Plush GD Colon
     },
     cost = 7,
     rarity = 2,
+    pronouns = 'he_him',
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
