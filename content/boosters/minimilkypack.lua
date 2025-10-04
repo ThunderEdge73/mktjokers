@@ -8,6 +8,7 @@ SMODS.Booster {
     },
     config = { extra = 3, choose = 1 },
     atlas = "boosters",
+    cost = 4,
     pos = { x = 0, y = 0 },
     group_key = "milkysboosters",
     discovered = true,
