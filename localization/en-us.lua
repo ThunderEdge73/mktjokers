@@ -4,6 +4,7 @@ return {
             bl_mktjk_dvd = {
                 name = "The DVD",
                 text = {
+                    "X15 Blind size",
                     "Win when the DVD",
                     "logo hits the corner"
                 }

@@ -2,7 +2,8 @@ SMODS.Joker{ --Miss Kobayashi:
     key = "kobayashi",
     config = {
         extra = {
-            discount_amount = 1
+            discount_amount = 1,
+            transformed = false
         }
     },
     loc_txt = {
@@ -28,6 +29,18 @@ SMODS.Joker{ --Miss Kobayashi:
     pools = { 
         ["milkys_jokers"] = true 
     },
+    update = function (self, card, dt)
+        if card.edition and card.edition.key == "e_polychrome" and not card.ability.extra.transformed then
+            card.ability.extra.transformed = true
+            G.E_MANAGER:add_event(Event({
+                func = function()
+                    card:set_ability("j_mktjk_truekobayashi")
+                    card:juice_up(0.8,0.8)
+                    return true
+                end
+            }))
+        end
+    end,
 
     add_to_deck = function(self, card, from_debuff)
         G.E_MANAGER:add_event(Event({
