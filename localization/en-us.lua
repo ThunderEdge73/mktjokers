@@ -12,6 +12,14 @@ return {
             bl_mktjk_dvd_alt = {
                 name = "The DVD",
                 text = { "Win when the DVD logo hits the corner" }
+            },
+            bl_mktjk_kindergarten = {
+                name = "The Kindergarten",
+                text = {
+                    "All XMult effects",
+                    "are treated",
+                    "as +Mult"
+                }
             }
         },
         Other = {
