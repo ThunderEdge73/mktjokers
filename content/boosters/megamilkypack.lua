@@ -24,7 +24,7 @@ SMODS.Booster {
             area = G.pack_cards,
             skip_materialize = true,
             soulable = true,
-            key_append = "mktjk_mega_milky_pack"
+            key_append = "mktjk_milky_pack"
         }
     end,
     particles = function(self)
