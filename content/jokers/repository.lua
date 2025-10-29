@@ -42,8 +42,8 @@ SMODS.Joker{ --The Mod Repository
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 1,
+        y = 7
     },
     cost = 8,
     rarity = 3,
