@@ -67,6 +67,15 @@ SMODS.Atlas {
 }
 
 SMODS.Atlas {
+    key = "flynn",
+    path = "flynn_atlas.png",
+    px = 71,
+    py = 95,
+}
+
+-- the 2 wide joker 
+
+SMODS.Atlas {
     key = "2widejoker",
     path = "doublewide_joker.png",
     px = 35,
@@ -79,6 +88,7 @@ local upd = Game.update
 local dt_table = {
     {"j_mktjk_milky",0.06,11,2},
     {"j_mktjk_mcparkour",0.06,19,4},
+    {"j_mktjk_flynn",0.12,15,0,'loop',0,0},
 }
 
 mktjk = {}
