@@ -24,4 +24,7 @@ SMODS.Joker{ --Rin Penrose And The Balatro Polycule
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 }
