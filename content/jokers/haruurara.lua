@@ -2,8 +2,8 @@ SMODS.Joker{ --Haru Urara
     key = "haruurara",
     config = {
         extra = {
-            odds = 10,
-            Xmult = 100,
+            odds = 1000,
+            Xmult = 113,
             chips = 113
         }
     },
@@ -50,7 +50,7 @@ SMODS.Joker{ --Haru Urara
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
-            if SMODS.pseudorandom_probability(card, 'group_0_4a6324d9', 1, card.ability.extra.odds, 'j_modprefix_haruurara') then
+            if SMODS.pseudorandom_probability(card, 'group_0_4a6324d9', 1, card.ability.extra.odds, 'j_mktjk_haruurara') then
                 SMODS.calculate_effect({Xmult = card.ability.extra.Xmult}, card)
             else
                 return {
