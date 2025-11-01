@@ -42,7 +42,9 @@ SMODS.Joker{ -- MiLKY-P
     unlocked = true,
     discovered = true,
     atlas = 'selfinsert',
-
+    in_pool = function (self, args)
+        return not args or args.source ~= "mktjk_milky_pack"
+    end,
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
                 local enhancement_pool = {}
