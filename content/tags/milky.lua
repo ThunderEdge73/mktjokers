@@ -4,7 +4,7 @@ SMODS.Tag {
     min_ante = 2,
 
     loc_txt = {
-        ['name'] = 'Yippee Milky Tag',
+        ['name'] = 'Milky Tag',
         ['text'] = {
             'Gives a free',
             'Mini Milky Pack'
