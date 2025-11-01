@@ -6,35 +6,42 @@ SMODS.Atlas({
 })
 
 SMODS.Atlas({
-    key = "vouchers", -- dont change this until you figure out how to change it without breaking everything
+    key = "vouchers",
     path = "vouchers_atlas.png",
     px = 71,
     py = 95,
 })
 
 SMODS.Atlas({
-    key = "decks", -- dont change this until you figure out how to change it without breaking everything
+    key = "decks",
     path = "decks_atlas.png",
     px = 71,
     py = 95,
 })
 
 SMODS.Atlas({
-    key = "editions", -- dont change this until you figure out how to change it without breaking everything
+    key = "editions", 
     path = "editions_atlas.png",
     px = 71,
     py = 95,
 })
 
 SMODS.Atlas({
-    key = "boosters", -- dont change this until you figure out how to change it without breaking everything
+    key = "boosters", 
     path = "boosters_atlas.png",
     px = 71,
     py = 95,
 })
 
 SMODS.Atlas({
-    key = "blinds", -- dont change this until you figure out how to change it without breaking everything
+    key = "tags",
+    path = "tags_atlas.png",
+    px = 71,
+    py = 95,
+})
+
+SMODS.Atlas({
+    key = "blinds",
     path = "bossblinds_atlas.png",
     px = 34,
     py = 34,
@@ -402,6 +409,18 @@ local function load_boosters_folder()
     end
 end
 
+local function load_tags_folder()
+    local mod_path = SMODS.current_mod.path
+    local vouchers_path = mod_path .. "/content/tags"
+    local files = NFS.getDirectoryItemsInfo(vouchers_path)
+    for i = 1, #files do
+        local file_name = files[i].name
+        if file_name:sub(-4) == ".lua" then
+            assert(SMODS.load_file("content/tags/" .. file_name))()
+        end
+    end
+end
+
 local function load_crossmod_folder()
     local mod_path = SMODS.current_mod.path
     local vouchers_path = mod_path .. "/crossmod"
@@ -422,6 +441,7 @@ load_seals_folder()
 load_blinds_folder()
 load_editions_folder()
 load_boosters_folder()
+load_tags_folder()
 load_crossmod_folder()
 
 assert(SMODS.load_file("titlescreen.lua"))()
