@@ -8,8 +8,9 @@ SMODS.Joker{ --Affinity By Canva
     loc_txt = {
         ['name'] = 'Affinity By Canva',
         ['text'] = {
-            '{C:red}+#1#{} Mult for every day since',
-            '{C:attention}Affinity by Canva{} was released.',
+            '{C:red}+#1#{} Mult for every day that',
+            '{C:attention}Affinity by Canva{} has been released',
+            'without paywalling existing features',
             '{C:inactive}(Currently {}{C:red}+#2#{}{C:inactive} Mult){}',
             '{s:0.7}"Free as in freedom my ass." - MiLKY, 2025{}'
         },
