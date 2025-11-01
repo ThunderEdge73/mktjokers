@@ -22,6 +22,16 @@ return {
                 }
             }
         },
+        Edition = {
+            e_mktjk_dithered = {
+                name = "Dithered",
+                text = {
+                    "Round {C:chips}Chips{} and {C:mult}Mult",
+                    "up to the nearest",
+                    "{C:attention}power of 2{}"
+                }
+            }
+        },
         Other = {
             mktjk_credits = {
                 name = "",
@@ -140,5 +150,8 @@ return {
             b_mktjk_credits = "Credits",
             milkysboosters = "Milky Pack"
         },
+        labels = {
+            mktjk_dithered = "Dithered"
+        }
     }
 }
