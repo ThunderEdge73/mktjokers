@@ -1,4 +1,4 @@
-# Milky's Jokers!
+# Milky's Bullshit!
 One of the Balatro mods of all time!
 
 ## Special Thanks
