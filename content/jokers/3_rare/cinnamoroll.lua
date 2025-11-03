@@ -11,7 +11,7 @@ SMODS.Joker{ --Cinnamoroll
         ['name'] = 'Cinnamoroll',
         ['text'] = {
             'Gains {X:blue,C:white}#1#X{} {C:blue}Chips{} when a',
-            '{C:attention}Food Joker{} is {C:attention}destroyed{}',
+            '{C:attention}Food Joker{} is {C:attention}\"eaten\"{} {C:inactive}(destroyed){}',
             '{C:inactive}(Currently {}{X:blue,C:white}#2#X{}{C:inactive} Chips){}',
         },
         ['unlock'] = {

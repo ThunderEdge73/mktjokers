@@ -605,6 +605,14 @@ function SMODS.shatters(card)
 	return shatterref(card)
 end
 
+local cardshatterref = Card.shatter
+function Card:shatter()
+    cardshatterref(self)
+    if SMODS.has_enhancement(self, "m_glass") then
+        SMODS.calculate_context({mktjk_glass_broken = true})
+    end
+end
+
 -- date calc
 function SinceDay(year, month, day)
 	local now = os.date("*t")
